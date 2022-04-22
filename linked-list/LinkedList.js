@@ -68,7 +68,12 @@ class LinkedList {
         for (let i = 0; i < index; i++) {
             current = current.next;
         }
-        return current.data;
+        if (current) {
+            return current.data;
+        }
+        else {
+            return null;
+        }
     }
  
     length() {
